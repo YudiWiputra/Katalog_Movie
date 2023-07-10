@@ -1,6 +1,5 @@
 package com.example.katalogmovie.Rest;
 
-import com.example.katalogmovie.Model.KeywordRespone;
 import com.example.katalogmovie.Model.Response;
 
 import retrofit2.Call;
@@ -25,10 +24,5 @@ public interface ApiInterface {
             @Query("page") int page
     );
 
-    @GET("search/keyword")
-    Call<KeywordRespone> searchKeywords(
-            @Query("api_key") String apiKey,
-            @Query("query") String query
-    );
 
 }
